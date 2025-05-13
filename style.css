@@ -14,9 +14,9 @@ body{
     align-items: center;
     height:100vh;
     font-family: 'Roboto', system-ui;
-    background: #bdc3c7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #bdc3c7;  
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
     color: #49444C;
 }
 
@@ -200,50 +200,31 @@ span:hover{
 
 
 @media (max-width: 600px) {
-  .contenedor {
-    
-    width: 50vh;
-  }
-
-  .logo-titulo {
-    font-size: 24px;
-  }
-
-  .agregar-tarea {
-    font-size: 18px;
-  }
-  input[type="text"] {
-    width: 350px;
-}
-
-  .campo, .input-btn {
-    width: 100%;
- }
-
-  .item-btn {
-    width: 100%;
- }
-
-
-  .tarea-izquierda {
-    align-self: flex-end;
-  }
-}
-
-@media (max-width: 700px){
-
-    .contenedor{
-        width: 60vh;
-        height: 100vh;
-        
+    .contenedor {
+        width: 50vh;
     }
 
+    .logo-titulo {
+        font-size: 24px;
+    }
+
+    .agregar-tarea {
+        font-size: 18px;
+    }
     input[type="text"] {
-    width: 425px;
+        width: 350px;
     }
 
-    .item-btn{
-        font-size: .85rem;
+    .campo, .input-btn {
+        width: 100%;
     }
-    
+
+    .item-btn {
+        width: 100%;
+    }
+
+
+    .tarea-izquierda {
+        align-self: flex-end;
+    }
 }

@@ -232,7 +232,9 @@ span:hover{
 @media (max-width: 400px){
 
     .contenedor{
-        width: 50vh;
+        width: 60vh;
+        height: 100vh;
+        
     }
 
     .item-btn{

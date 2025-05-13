@@ -48,9 +48,9 @@ contenedorTareas.addEventListener("click", (e) => {
             }else{
                 e.classList.toggle("pendiente")
             }
-
+            guardarTareas();
         });
-        guardarTareas();
+        
 
     }
 
@@ -63,9 +63,9 @@ contenedorTareas.addEventListener("click", (e) => {
             }else{
                 e.classList.toggle("completada")
             }
-
+            guardarTareas();
         });
-        guardarTareas();
+        
 
     }
 

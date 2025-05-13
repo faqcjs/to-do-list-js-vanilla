@@ -14,25 +14,17 @@
     <main>
         
         <div class="contenedor">
-            <header class="header">
-                <div class="logo">
-                    <h1 class="logo-titulo">Lista de tareas</h1>
-                </div>
-            </header>
 
             <div class="input-tarea">
-                <div>
-                    <h2 class="agregar-tarea">Agregar tarea</h2>
-                </div>
                 <div class="input-acciones">
-                    <input type="text" class="campo">
-                    <button class="input-btn"><i class="bi bi-plus-circle"></i></button>
+                    <h2 class="campo-texto"><input class="campo" type="text" placeholder="Agrega tu tarea..."></h2>
+                    <button class="input-btn invisible"></button>
                 </div>
                 <div class="botones">
                     <ul class="botones-lista">
-                        <li class="botones-item "><button class="item-btn active">Todas</button></li>
-                        <li class="botones-item"><button class="item-btn">Pendientes</button></li>
-                        <li class="botones-item"><button class="item-btn">Completadas</button></li>
+                        <li class="botones-item "><button class="item-btn active todo">Todas</button></li>
+                        <li class="botones-item "><button class="item-btn active pendientes">Pendientes</button></li>
+                        <li class="botones-item"><button class="item-btn active completa">Completadas</button></li>
                     </ul>
                 </div>
             </div>

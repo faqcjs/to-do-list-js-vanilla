@@ -218,11 +218,11 @@ span:hover{
 
   .campo, .input-btn {
     width: 100%;
-  }
+ }
 
   .item-btn {
     width: 100%;
-  }
+ }
 
 
   .tarea-izquierda {
@@ -230,12 +230,16 @@ span:hover{
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 700px){
 
     .contenedor{
         width: 60vh;
         height: 100vh;
         
+    }
+
+    input[type="text"] {
+    width: 425px;
     }
 
     .item-btn{

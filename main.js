@@ -30,6 +30,7 @@ botonAgregar.addEventListener("click", ()=>{
                         <span class="tarea-eliminar"><i class="bi bi-trash2-fill"></i></span>
                     </div>`;
         document.getElementById("tareas").appendChild(div)
+        guardarTareas();
     }
     campoTarea.value=""
     campoTarea.focus()   
@@ -40,33 +41,17 @@ contenedorTareas.addEventListener("click", (e) => {
     const elemento = e.target;
     
     if (elemento.closest(".tarea-pendiente")) {
-        console.log("Se marcó como pendiente");
-        const e = elemento.closest(".tarea")
-        e.classList.forEach(clase => {
-            if (clase === "completada") {
-                e.classList.remove("completada")
-            }else{
-                e.classList.toggle("pendiente")
-            }
-            guardarTareas();
-        });
-        
-
+        const tarea = elemento.closest(".tarea");
+        tarea.classList.remove("completada");
+        tarea.classList.toggle("pendiente");
+        guardarTareas();
     }
 
     if (elemento.closest(".tarea-completa")) {
-        console.log("Se marcó como completada");
-        const e = elemento.closest(".tarea")
-        e.classList.forEach(clase => {
-            if (clase === "pendiente") {
-                e.classList.remove("pendiente")
-            }else{
-                e.classList.toggle("completada")
-            }
-            guardarTareas();
-        });
-        
-
+        const tarea = elemento.closest(".tarea");
+        tarea.classList.remove("pendiente");
+        tarea.classList.toggle("completada");
+        guardarTareas();
     }
 
     if (elemento.closest(".tarea-eliminar")) {
